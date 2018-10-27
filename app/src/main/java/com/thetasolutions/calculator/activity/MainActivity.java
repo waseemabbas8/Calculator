@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         double result = expression.evaluate();  // evaluating the expression
                         txtResult.setText(Double.toString(result));
                     }catch (Exception e){
-                        txtExpression.setText(AppConstants.MESSAGE_INVALID_EXP);
+                        txtExpression.setText("Invalid expression");
                         Log.d("Exception"," message : " + e.getMessage());
                     }
 
@@ -152,4 +152,5 @@ public class MainActivity extends AppCompatActivity {
             txtResult.setText("");
         }
     }
+
 }
